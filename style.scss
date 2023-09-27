@@ -1,0 +1,51 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    .container {
+        main {
+            gap: 10px;
+
+            .start-counter {
+                opacity: 0;
+            }
+
+            .beats {
+                background-color: transparent;
+            }
+
+            .beat {
+                outline: 2px solid black;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    color: black;
+                }
+            }
+
+            .beats-lookahead {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

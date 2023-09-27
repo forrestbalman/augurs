@@ -1,0 +1,77 @@
+html, body {
+  height: 100vh;
+  width: 100vw;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+          animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+html .container main, body .container main {
+  gap: 10px;
+}
+
+html .container main .start-counter, body .container main .start-counter {
+  opacity: 0;
+}
+
+html .container main .beats, body .container main .beats {
+  background-color: transparent;
+}
+
+html .container main .beat, body .container main .beat {
+  outline: 2px solid black;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container main .beat i, body .container main .beat i {
+  color: black;
+}
+
+html .container main .beats-lookahead, body .container main .beats-lookahead {
+  opacity: 0.6;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
